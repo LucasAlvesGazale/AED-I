@@ -1,3 +1,10 @@
+/*
+Exercício 1000
+Autor: Lucas Alves Gazale
+RA: 176565
+Data: 27/10/2024
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
