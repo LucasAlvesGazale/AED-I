@@ -1,10 +1,3 @@
-/*
-Exercício 1000
-Autor: Lucas Alves Gazale
-RA: 176565
-Data: 27/10/2024
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -74,14 +67,12 @@ int main()
         }//final da verificação por blocos 3x3
 
          printf("Instancia %d\n", k + 1);
-        if (V == 0) {
-            printf("SIM\n");
-        } else {
-            printf("NAO\n");
-        }
-        if (k < instancia - 1) {
-            printf("\n"); // Linha em branco entre instâncias
-        }
+         if (V==0){
+            printf("SIM\n\n");
+         }
+         else {
+            printf("NAO\n\n");
+         }
 
     }
     return 0;
