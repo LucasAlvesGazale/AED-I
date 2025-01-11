@@ -1,3 +1,9 @@
+/*
+Exercício 2729
+Autor: Lucas Alves Gazale
+RA: 176565
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
