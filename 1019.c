@@ -2,13 +2,12 @@
 
 int main() {
     int N;
-    scanf("%d", &N);  // Lê o número de segundos
+    scanf("%d", &N);  
     
-    int horas = N / 3600;  // Divide por 3600 para obter as horas
-    int minutos = (N % 3600) / 60;  // O resto da divisão por 3600, depois divide por 60 para os minutos
-    int segundos = N % 60;  // O resto da divisão por 60 são os segundos restantes
+    int horas = N / 3600;  
+    int minutos = (N % 3600) / 60;  
+    int segundos = N % 60;  
     
-    // Imprime no formato horas:minutos:segundos
     printf("%d:%d:%d\n", horas, minutos, segundos);
     
     return 0;
