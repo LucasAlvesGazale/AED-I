@@ -4,8 +4,7 @@
 int main() {
     double A, B, C;
     scanf("%lf %lf %lf", &A, &B, &C);
-    
-    // Verifica se A é zero ou se o discriminante é negativo
+   
     if (A == 0 || (B * B - 4 * A * C) < 0) {
         printf("Impossivel calcular\n");
     } else {
