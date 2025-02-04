@@ -13,16 +13,16 @@ int main() {
         
         for (int i = 0; linha[i] != '\0'; i++) {
             if (linha[i] == '<') {
-                abertos++;  // Encontrou um '<', espera-se um '>'
+                abertos++;  
             } else if (linha[i] == '>') {
                 if (abertos > 0) {
-                    diamantes++;  // Formou um diamante
-                    abertos--;  // Esse '<' já foi usado
+                    diamantes++;  
+                    abertos--;  
                 }
             }
         }
         
-        printf("%d\n", diamantes);  // Imprime a quantidade de diamantes encontrados
+        printf("%d\n", diamantes);  
     }
     
     return 0;
