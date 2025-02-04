@@ -3,16 +3,16 @@
 
 void merge(int arr[], int temp[], int left, int mid, int right, int *count) {
     int i, j, k;
-    i = left; // índice para a sublista esquerda
-    j = mid;  // índice para a sublista direita
-    k = left; // índice para a lista temporária
+    i = left; 
+    j = mid;  
+    k = left; 
 
     while ((i <= mid - 1) && (j <= right)) {
         if (arr[i] <= arr[j]) {
             temp[k++] = arr[i++];
         } else {
             temp[k++] = arr[j++];
-            *count += (mid - i); // conta o número de inversões
+            *count += (mid - i); 
         }
     }
 
