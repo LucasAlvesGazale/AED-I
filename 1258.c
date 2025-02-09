@@ -34,8 +34,8 @@ int main() {
 
         Camiseta camisetas[N];
         for (int i = 0; i < N; i++) {
-            scanf(" %[^\n]s", camisetas[i].nome); // leitura do nome
-            scanf("%s %c", camisetas[i].cor, &camisetas[i].tamanho); // leitura da cor e tamanho
+            scanf(" %[^\n]s", camisetas[i].nome); 
+            scanf("%s %c", camisetas[i].cor, &camisetas[i].tamanho); 
         }
 
         qsort(camisetas, N, sizeof(Camiseta), compare);
