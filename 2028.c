@@ -4,7 +4,7 @@ int main() {
     int N, caso = 1;
     
     while (scanf("%d", &N) != EOF) {
-        int total_numeros = 1; // Contar o zero inicialmente
+        int total_numeros = 1; 
         
         for (int i = 1; i <= N; i++) {
             total_numeros += i;
