@@ -13,10 +13,9 @@ int main() {
     int N, L;
     scanf("%d %d", &N, &L);
 
-    int adj[100][100] = {0};  // Matriz de adjacência
-    int visited[100] = {0};    // Vetor de visitados
+    int adj[100][100] = {0};  
+    int visited[100] = {0};   
 
-    // Ler as ligações
     for (int i = 0; i < L; i++) {
         int X, Y;
         scanf("%d %d", &X, &Y);
@@ -24,10 +23,8 @@ int main() {
         adj[Y][X] = 1;
     }
 
-    // Começar a DFS a partir do primeiro segmento (1)
     dfs(1, adj, visited, N);
 
-    // Verificar se todos os segmentos foram visitados
     int completo = 1;
     for (int i = 1; i <= N; i++) {
         if (!visited[i]) {
